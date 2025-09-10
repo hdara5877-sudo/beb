@@ -1,0 +1,67 @@
+.header {
+    background-color: #f95454;
+    padding-bottom: 20px;
+    font-family: KyivTypeTitling;
+}
+#logo {
+    width: 100px;
+    height: auto;
+    margin: 20px;
+}
+.head h3 {
+    color: #e6eb54;
+    font-size: 24px;
+    font-family: KyivTypeTitling;
+}
+
+.picture {
+    width: 100%;
+    display: flex;
+
+
+}
+
+#wid {
+  width: 50%;
+  height: auto;
+  margin: 0 auto; 
+
+}
+
+a {
+    text-decoration: none;
+    margin: 220px;
+    color: #ffffff;
+    font-family: KyivTypeTitling;
+}
+#auht, #bron {
+    width: 135px;
+    height: 40px;
+    font-size: 16px;
+    background-color: rgb(222, 200, 60);
+    border: 0;
+    border-radius: 10px;
+    font-family: KyivTypeTitling;
+}
+.card img {
+    width: 200px;
+    height: auto;
+}   
+h3, h1, p {
+    font-family: KyivTypeTitling;
+}
+
+.footer {
+    background-color: #2b2929;
+    padding-bottom: 40px;
+    color: #8a8484;
+    text-align: center;
+    padding-top: 20px;
+    font-family: KyivTypeTitling;
+}
+@font-face {
+    font-family: KyivTypeTitling;
+    src: url(KyivTypeTitling-VarGX.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
