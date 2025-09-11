@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 .header {
     background-color: #f95454;
     padding-bottom: 20px;
@@ -17,15 +21,12 @@
 .picture {
     width: 100%;
     display: flex;
-
-
 }
 
 #wid {
   width: 50%;
   height: auto;
   margin: 0 auto; 
-
 }
 
 a {
@@ -43,14 +44,83 @@ a {
     border-radius: 10px;
     font-family: KyivTypeTitling;
 }
-.card img {
-    width: 200px;
-    height: auto;
+.main {
+    width: fit-content;
+    margin: auto;
+    padding-bottom: 100px;
+    padding-top: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 260px;
 }   
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 300px;
+}
+
+.card img {
+    width: 100%;
+    max-width: 250px;
+    margin-bottom: 15px;
+}
+
+
 h3, h1, p {
     font-family: KyivTypeTitling;
 }
+.cuh {
+    width: fit-content;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 250px;
+    padding-bottom: 90px;
+}
 
+
+.carta h1 {
+    margin: 50px;
+    color: #131312;
+    text-align: center;
+}
+.menu {
+    width: 50%;
+    height: 60px;
+    margin: 30px;
+    margin-right: 100px;
+    text-align: center;
+    font-size: 25px;
+    background-color:rgb(242, 230, 243);
+    border: 2px solid rgb(242, 230, 243);
+    border-radius: 15px;
+}
+iframe {
+    margin: 150px;
+    padding-left: 150px;
+}
+
+.inner h1 {
+    color:#131312 ;
+    text-align: center;
+    margin: 20px;
+}
+.col {
+    margin: 30px;
+    margin-top: 100px;
+    border:2px solid rgb(222, 211, 211);
+    border-radius: 15px;
+    background-color: rgb(222, 211, 211);
+}
+.col img {
+    width: 250px;
+    height: auto;
+    padding: 30px;
+}
 .footer {
     background-color: #2b2929;
     padding-bottom: 40px;
@@ -58,6 +128,15 @@ h3, h1, p {
     text-align: center;
     padding-top: 20px;
     font-family: KyivTypeTitling;
+}
+.left img {
+    margin: 20px;
+    width: 500px;
+    height: auto;
+    padding: 30px;  
+}
+.text {
+    margin: 40px;
 }
 @font-face {
     font-family: KyivTypeTitling;
