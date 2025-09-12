@@ -47,8 +47,8 @@ a {
 .main {
     width: fit-content;
     margin: auto;
-    padding-bottom: 100px;
-    padding-top: 90px;
+    padding-bottom: 150px;
+    padding-top: 95px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -79,7 +79,8 @@ h3, h1, p {
     flex-direction: row;
     justify-content: space-around;
     gap: 250px;
-    padding-bottom: 90px;
+    padding-top: 40px;
+    padding-bottom: 95px;
 }
 
 
@@ -121,6 +122,12 @@ iframe {
     height: auto;
     padding: 30px;
 }
+.col h6 {
+   font-size: 20px;
+    text-align: right;
+    margin-right: 40px;
+    padding-bottom: 50px;
+}
 .footer {
     background-color: #2b2929;
     padding-bottom: 40px;
@@ -133,11 +140,48 @@ iframe {
     margin: 20px;
     width: 500px;
     height: auto;
-    padding: 30px;  
+    padding: 30px; 
 }
 .text {
-    margin: 40px;
+    margin: 45px;
 }
+.text h3 {
+    font-size: 35px;
+}
+.text li {
+    width: 480px;
+    height: 190px;
+    font-size: 25px;
+    border-radius: 15px;
+    margin: 0 0 10px 0;
+    list-style-type: disc;
+    background-color: rgb(253, 232, 236);
+}
+
+.right p {
+    font-size: 25px;
+    margin: 20px;
+    text-align: right;
+    padding: 35px;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.right-imgs {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.right-img {
+    width: 250px;
+    border-radius: 15px;
+}
+
 @font-face {
     font-family: KyivTypeTitling;
     src: url(KyivTypeTitling-VarGX.ttf);
