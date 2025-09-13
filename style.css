@@ -4,8 +4,12 @@
 }
 .header {
     background-color: #f95454;
-    padding-bottom: 20px;
+    padding: 20px;
     font-family: KyivTypeTitling;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
 }
 #logo {
     width: 100px;
@@ -19,8 +23,22 @@
 }
 
 .picture {
-    width: 100%;
+    width: 20vw;
+    height: 20vh;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    background-image: url(image/wid.jfif);
+    background-size: cover;
+    padding: 250px;
+    margin: auto;
+    border-radius: 50px;
+}
+.picture h3 {
+    background-color: #e6eb5488;
+    padding: 20px;
+    border-radius: 20px;
 }
 
 #wid {
@@ -43,6 +61,7 @@ a {
     border: 0;
     border-radius: 10px;
     font-family: KyivTypeTitling;
+    cursor: pointer;
 }
 .main {
     width: fit-content;
@@ -63,14 +82,21 @@ a {
 }
 
 .card img {
-    width: 100%;
+    height: 200px;
     max-width: 250px;
     margin-bottom: 15px;
+}
+.card p {
+    margin-bottom: 50px;
 }
 
 
 h3, h1, p {
     font-family: KyivTypeTitling;
+}
+#cuh {
+    text-align: center;
+    font-size: 40px;
 }
 .cuh {
     width: fit-content;
@@ -81,6 +107,9 @@ h3, h1, p {
     gap: 250px;
     padding-top: 40px;
     padding-bottom: 95px;
+}
+.myau {
+    text-align: center;
 }
 
 
@@ -111,11 +140,12 @@ iframe {
     margin: 20px;
 }
 .col {
-    margin: 30px;
+    margin: 40px;
     margin-top: 100px;
     border:2px solid rgb(222, 211, 211);
     border-radius: 15px;
     background-color: rgb(222, 211, 211);
+    padding: 25px;
 }
 .col img {
     width: 250px;
@@ -125,7 +155,7 @@ iframe {
 .col h6 {
    font-size: 20px;
     text-align: right;
-    margin-right: 40px;
+    margin-right: 35px;
     padding-bottom: 50px;
 }
 .footer {
