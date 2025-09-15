@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Главная</title>
 </head>
 <body>
     <div class="header">
@@ -13,11 +13,38 @@
         <div class="link"><a href="contacts.html">Контакты</a></div>
         <div class="link"><a href="info.html">О нас</a></div>
         <div class="link"><a href="admin.html">Админ</a></div>
-        <button id="auht">Вход</button>
+        <button onclick="openModal()" id="auht">Вход</button>
     </div>
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h3>Вход</h3>
+        <p>hehehehe</p>
+        <input type="text" placeholder="Введите email">
+        <input type="text" placeholder="Введите пароль">
+        <label for="remember-me">Запомнить меня?</label>
+        <input type="checkbox" name="remember-me" id="">
+        <button id="auht">Вход</button>
+        <p>Нет аккаунта?</p>
+        <a href="reg.js">Зарегистрируйтесь</a>
+    </div>
+</div>
     <div class="picture">
         <h3>Добро пожаловать</h3>
-        <button id="bron">Забронировать</button>
+        <button onclick="openModalA()" id="bron">Забронировать</button>
+    </div>
+    <div id="wewe" class="bronb">
+        <div class="bronb-content">
+            <span class="close" onclick="closeModalB()">&times;</span>
+            <h3>Бронирование столика</h3> 
+            <input type="text" placeholder="Имя">
+            <input type="text" placeholder="Дата">
+            <input type="text" placeholder="Время">
+            <input type="text" placeholder="Количество гостей">
+            <input type="text" placeholder="Номер столика">
+            <input type="text" placeholder="Особые пожелания">
+            <button id="auht">Забронировать</button>
+        </div>
     </div>
     <div class="main">
         <div class="card">
@@ -52,11 +79,10 @@
         <div class="myau"><img src="image/cuh.png" alt="">
             <p>Молекулярная кухня</p></div>
     </div>
-
-        
     <div class="footer">
         <p>2025 &copy;</p>
     </div>
 </body>
 <script src="auth.js"></script>
+<script src="reserv.js"></script>
 </html>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Контакты</title>
 </head>
 <body>
     <div class="header">
@@ -13,8 +13,21 @@
         <div class="link"><a href="contacts.html">Контакты</a></div>
         <div class="link"><a href="info.html">О нас</a></div>
         <div class="link"><a href="admin.html">Админ</a></div>
-        <button id="auht">Вход</button>
+        <button onclick="openModal()" id="auht">Вход</button>
     </div>
+    <div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h3>Вход</h3>
+        <p>hehehehe</p>
+        <input type="text" placeholder="Введите email">
+        <input type="text" placeholder="Введите пароль">
+        <input type="checkbox" name="" id="">
+        <button id="auht">Вход</button>
+        <p>Нет аккаунта?</p>
+        <a href="reg.js">Зарегистрируйтесь</a>
+    </div>
+</div>
     <div class="info">
         <div class="carta">
             <h1>Наше расположение</h1>
