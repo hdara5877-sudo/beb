@@ -1,3 +1,8 @@
+<?php
+include "./core.php";
+$err = isset($_COOKIE['err']) ? $_COOKIE['err'] : '';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,12 +13,12 @@
 </head>
 <body>
     <div class="header">
-        <a id="logo" href="index.html"><img src="image/logo.png" alt=""></a>
+        <a id="logo" href="index.php"><img src="image/logo.png" alt=""></a>
         <div class="link"><a href="appliation.html">Мои заявки</a></div>
         <div class="link"><a href="contacts.html">Контакты</a></div>
         <div class="link"><a href="info.html">О нас</a></div>
-        <div class="link"><a href="admin.html">Админ</a></div>
-        <button id="auht">Регистрация</button>
+        <div class="link"></div>
+        <button id="auth">Регистрация <?php if($err !== '') { ?><br><?=$err?><?php } ?></button>
     </div>
         <div class="picture">
             <h3>Добро пожаловать</h3>
@@ -55,5 +60,12 @@
         <div class="footer">
             <p>2025 &copy;</p>
         </div>
+        <div class="modal-field">
+            <?php
+                include "./reg.php";
+                include "./log.php";
+            ?>
+        </div>
+        <script src="index.js"></script>
 </body>
 </html>

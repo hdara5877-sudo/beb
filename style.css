@@ -57,16 +57,19 @@ a {
   color: #ffffff;
   font-family: KyivTypeTitling;
 }
-#auht,
+#auth,
 #bron {
   width: 135px;
-  height: 40px;
+  height: fit-content;
   font-size: 16px;
   background-color: rgb(222, 200, 60);
   border: 0;
   border-radius: 10px;
   font-family: KyivTypeTitling;
   cursor: pointer;
+}
+#auth a {
+  color: black;
 }
 .main {
   width: fit-content;
@@ -84,6 +87,9 @@ a {
   align-items: center;
   text-align: center;
   max-width: 300px;
+  padding: 20px;
+  border-radius: 20px;
+  transition: all 0.5s;
 }
 
 .card img {
@@ -93,6 +99,12 @@ a {
 }
 .card p {
   margin-bottom: 50px;
+}
+
+.card:hover {
+  transform: translateY(-25px);
+  background-color: #8a84846c;
+  transition: all 0.5s;
 }
 
 h3,
@@ -300,4 +312,55 @@ input {
   src: url(KyivTypeTitling-VarGX.ttf);
   font-weight: normal;
   font-style: normal;
+}
+
+.reg-modal {
+  display: none;
+}
+.reg-modal input, .reg-modal button {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #f95454;
+  color: white;
+}
+
+.reg-modal.active {
+  display: block;
+  padding: 50px;
+  background-color: #8a8484;
+  border-radius: 50px;
+  z-index: 2;
+  pointer-events: all;
+}
+
+.log-modal {
+  display: none;
+}
+.log-modal input, .log-modal button {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #f95454;
+  color: white;
+}
+
+.log-modal.active {
+  display: block;
+  padding: 50px;
+  background-color: #8a8484;
+  border-radius: 50px;
+  z-index: 2;
+  pointer-events: all;
+}
+
+.modal-field {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
 }
