@@ -1,5 +1,5 @@
 <?php
 session_start();
 
-$link = new mysqli('localhost', 'root', '', 'bron')
+$link = new mysqli('localhost', 'root', '', 'bron');
 ?>

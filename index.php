@@ -22,7 +22,7 @@ $err = isset($_COOKIE['err']) ? $_COOKIE['err'] : '';
     </div>
         <div class="picture">
             <h3>Добро пожаловать</h3>
-            <button id="bron">Забронировать</button>
+            <button id="bron">Забронировать  <?php if($err !== '') { ?><br><?=$err?><?php } ?></button>
         </div>
         <div class="main">
             <div class="card">
