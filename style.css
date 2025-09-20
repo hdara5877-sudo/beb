@@ -28,7 +28,7 @@ body {
 }
 
 .picture {
-  width: 20vw;
+  width: 25vw;
   height: 20vh;
   display: flex;
   flex-direction: column;
@@ -41,6 +41,7 @@ body {
   border-radius: 50px;
 }
 .picture h3 {
+  font-size: 25px;
   background-color: #e6eb5488;
   padding: 20px;
   border-radius: 20px;
@@ -59,7 +60,7 @@ a {
 }
 #auth,
 #bron {
-  width: 135px;
+  width: 145px;
   height: fit-content;
   font-size: 16px;
   background-color: rgb(222, 200, 60);
@@ -320,14 +321,14 @@ input {
 .reg-modal input, .reg-modal button {
   padding: 10px;
   border-radius: 10px;
-  background-color: #ffc8c8;
-  color: white;
+  background-color: #ddcc77;
+  color: rgb(0, 0, 0);
 }
 
 .reg-modal.active {
   display: block;
   padding: 50px;
-  background-color: #8a8484;
+  background-color: #f35e5e;
   border-radius: 50px;
   z-index: 2;
   pointer-events: all;
@@ -339,14 +340,14 @@ input {
 .log-modal input, .log-modal button {
   padding: 10px;
   border-radius: 10px;
-  background-color: #f95454;
-  color: white;
+  background-color: #ddcc77;
+  color: rgb(0, 0, 0);
 }
 
 .log-modal.active {
   display: block;
   padding: 50px;
-  background-color: #8a8484;
+  background-color: #f35e5e;
   border-radius: 50px;
   z-index: 2;
   pointer-events: all;

@@ -9,8 +9,7 @@ if(isset($_POST['bron'])) {
     $time = $_POST['time'];
     $number = $_POST['$number'];
     $text = $_POST['$text'];
-   
+
+
     
-
-
 }

@@ -17,7 +17,7 @@ $err = isset($_COOKIE['err']) ? $_COOKIE['err'] : '';
         <div class="link"><a href="appliation.html">Мои заявки</a></div>
         <div class="link"><a href="contacts.html">Контакты</a></div>
         <div class="link"><a href="info.html">О нас</a></div>
-        <div class="link"></div>
+        <div class="link"><a href="admin.html">Админ-панель</a></div>
         <button id="auth">Регистрация <?php if($err !== '') { ?><br><?=$err?><?php } ?></button>
     </div>
         <div class="picture">
