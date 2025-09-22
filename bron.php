@@ -23,3 +23,4 @@ $err = isset($_COOKIE['err']) ? $_COOKIE['err'] : '';
         <button>Забронировать</button>
     </form>
 </div>
+
