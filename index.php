@@ -64,6 +64,7 @@ $err = isset($_COOKIE['err']) ? $_COOKIE['err'] : '';
             <?php
                 include "./reg.php";
                 include "./log.php";
+                include "./bron.php";
             ?>
         </div>
         <script src="index.js"></script>

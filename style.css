@@ -353,6 +353,18 @@ input {
   pointer-events: all;
 }
 
+.bron-modal {
+  display: none;
+}
+.bron-modal.active {
+  display: block;
+  padding: 50px;
+  background-color: #f35e5e;
+  border-radius: 50px;
+  z-index: 2;
+  pointer-events: all;
+}
+
 .modal-field {
   position: fixed;
   width: 100vw;
