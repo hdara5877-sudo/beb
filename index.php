@@ -1,6 +1,8 @@
 <?php
 include "./core.php";
+session_start();
 $err = isset($_COOKIE['err']) ? $_COOKIE['err'] : '';
+
 ?>
 
 <!DOCTYPE html>
@@ -12,13 +14,15 @@ $err = isset($_COOKIE['err']) ? $_COOKIE['err'] : '';
     <title>Главная</title>
 </head>
 <body>
+    
     <div class="header">
         <a id="logo" href="index.php"><img src="image/logo.png" alt=""></a>
-        <div class="link"><a href="appliation.html">Мои заявки</a></div>
+        <div class="link"><a href="appliation.php">Мои заявки</a></div>
         <div class="link"><a href="contacts.html">Контакты</a></div>
         <div class="link"><a href="info.html">О нас</a></div>
-        <div class="link"><a href="admin.html">Админ-панель</a></div>
+        <div class="link"><a href="admin.php">Админ-панель</a></div>
         <button id="auth">Регистрация <?php if($err !== '') { ?><br><?=$err?><?php } ?></button>
+        <button id="auth">Выход</button>
     </div>
         <div class="picture">
             <h3>Добро пожаловать</h3>

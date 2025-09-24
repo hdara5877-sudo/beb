@@ -377,3 +377,10 @@ input {
   justify-content: center;
   pointer-events: none;
 }
+
+.bron-modal input, .bron-modal button {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #ddcc77;
+  color: rgb(0, 0, 0);
+}

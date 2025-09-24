@@ -3,8 +3,8 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Сен 17 2025 г., 19:10
--- Версия сервера: 8.0.30
+-- Время создания: Сен 24 2025 г., 10:07
+-- Версия сервера: 10.8.4-MariaDB
 -- Версия PHP: 8.1.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -28,12 +28,22 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `apps` (
-  `id` int NOT NULL,
-  `user_id` int NOT NULL,
-  `time` date NOT NULL,
-  `comment` int NOT NULL,
+  `id` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `dateTime` date NOT NULL,
+  `number` int(11) NOT NULL,
+  `comment` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `accepted` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Дамп данных таблицы `apps`
+--
+
+INSERT INTO `apps` (`id`, `user_id`, `dateTime`, `number`, `comment`, `accepted`) VALUES
+(5, 2, '2025-09-25', 666, 'heh', 0),
+(6, 2, '2025-10-08', 444, 'tyty', 0),
+(7, 1, '2025-10-12', 33333, 'ry', 0);
 
 -- --------------------------------------------------------
 
@@ -42,11 +52,11 @@ CREATE TABLE `apps` (
 --
 
 CREATE TABLE `users` (
-  `id` int NOT NULL,
-  `name` varchar(255) NOT NULL,
-  `email` varchar(255) NOT NULL,
-  `password` int NOT NULL,
-  `role` varchar(127) NOT NULL
+  `id` int(11) NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `password` int(11) NOT NULL,
+  `role` varchar(127) COLLATE utf8mb4_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
@@ -54,7 +64,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `password`, `role`) VALUES
-(1, 'asd', 'asd@mail.ru', 123123, 'client');
+(1, 'asd', 'asd@mail.ru', 123123, 'client'),
+(2, 'wewe', 'www@com', 111111, 'client');
 
 --
 -- Индексы сохранённых таблиц
@@ -80,13 +91,13 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT для таблицы `apps`
 --
 ALTER TABLE `apps`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT для таблицы `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

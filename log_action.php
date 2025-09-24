@@ -2,6 +2,7 @@
 
 include "./core.php";
 
+
 if(isset($_POST['log'])) {
     setcookie('err', '');
     $email = $_POST['email'];

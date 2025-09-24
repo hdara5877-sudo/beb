@@ -15,10 +15,9 @@ if(isset($_POST['bron'])) {
         header('Location: bron.php');
         exit();
     }
-    var_dump($date, $time);
     $dateTime = DateTime::createFromFormat('Y-m-d H:i', $date . ' ' . $time)->format('Y-m-d H:i');
-    $link->query("INSERT INTO apps(`user_id`, `datetime`, `number`, `comment`, `accepted`)
-    VALUES ($name, '$dateTime', '$number', '$text', false)");
-    header('Location: bron.php');
+    $link->query("INSERT INTO apps(`user_id`, `dateTime`, `number`, `comment`, `accepted`)
+    VALUES ('$name', '$dateTime', '$number', '$text', false)");
+    header('Location: index.php');
     exit();
 }
