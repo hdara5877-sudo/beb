@@ -9,21 +9,21 @@
 <body>
      <div class="header">
         <a id="logo" href="index.php"><img src="image/logo.png" alt=""></a>
-        <div class="link"><a href="appliation.php">Мои заявки</a></div>
-        <div class="link"><a href="contacts.html">Контакты</a></div>
-        <div class="link"><a href="info.html">О нас</a></div>
-        <div class="link"><a href="admin.php">Админ</a></div>
-        <button id="auth">Вход</button>
+        <div class="link"><a href="contacts.php">Контакты</a></div>
+        <div class="link"><a href="info.php">О нас</a></div>
+        <?php if(isset($_COOKIE['user_role']) && $_COOKIE['user_role'] == 'admin') { ?><div class="link"><a href="admin.php">Админ-панель</a></div><? }?>
     </div>
 <div class="inner">
     <h1>Мои заявки</h1>
      <?php 
     include "./core.php";
-    
-    $result = $link->query("SELECT * FROM apps ORDER BY dateTime DESC");
+    if(!isset($_COOKIE['user_role'])) {
+        header("Location: index.php");
+    }
+    $user_id = $_COOKIE['user_id'];
+    $result = $link->query("SELECT * FROM apps WHERE `user_id` = '$user_id' ORDER BY dateTime DESC");
 
 ?>
-
 
 <?php
 
@@ -34,6 +34,7 @@ foreach($result as $column) { ?>
         <div class="column" id="col1">
             <h4>Забронирован столик на <?=$column['dateTime']?></h4>
             <p>Количество гостей: <?=$column['number']?></p>
+            <p>Пожелания: <?=$column['comment']?></p>
         </div>
         <div class="column" id="col2">
             <h3>Статус:</h3>

@@ -7,16 +7,19 @@ document.addEventListener('DOMContentLoaded', () => {
     const log = document.querySelector(".log-modal")
     const bron = document.querySelector('.bron-modal')
 
-    btn1.addEventListener('click', () => {
-        if(log.classList.contains('active')) {
-            log.classList.remove('active')
-        }
-        reg.classList.toggle('active')
-    })
-
-    btn3.addEventListener('click', e => {
-        bron.classList.toggle('active')
-    })
+    if(btn1) {
+        btn1.addEventListener('click', () => {
+            if(log.classList.contains('active')) {
+                log.classList.remove('active')
+            }
+            reg.classList.toggle('active')
+        })
+    }
+    if(btn3) {
+        btn3.addEventListener('click', e => {
+            bron.classList.toggle('active')
+        })
+    }
 
     btn2.forEach(btn => {
         btn.addEventListener('click', () => {
